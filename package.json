@@ -1,0 +1,29 @@
+{
+    "name": "cp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "esbuild.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "npx prettier . -c",
+        "bundle": "node esbuild.mjs",
+        "build": "make"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "html-minifier": "^4.0.0",
+        "prettier": "^2.8.3",
+        "esbuild": "0.17.5"
+    },
+    "dependencies": {
+        "@codemirror/commands": "^6.2.0",
+        "@codemirror/lang-python": "^6.1.1",
+        "@codemirror/language": "^6.4.0",
+        "@codemirror/language-data": "^6.1.0",
+        "@codemirror/theme-one-dark": "^6.1.0",
+        "@codemirror/view": "^6.7.3",
+        "codemirror": "^6.0.1"
+    }
+}
