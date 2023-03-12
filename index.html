@@ -332,9 +332,9 @@
         <main><div id="cm-editor" height="300" class="editor"></div></main>
 
         <footer>
-            <div class="controls">
+            <div class="controls visible-embed">
                 <div class="section">
-                    <span class="logo hidden-no-embed">
+                    <span class="logo visible-embed" hidden>
                         <span class="text-light">&lt;</span>cp<span
                             class="text-light"
                         >
@@ -357,8 +357,7 @@
                             <use href="static/sprite.svg#github"></use>
                         </svg>
                     </a>
-                    <!--document.getElementById("about-dialog").showModal();-->
-                    <a href="#" id="about-link">
+                    <a href="#" id="about-link" class="hidden-embed">
                         About
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -400,14 +399,13 @@
                     </select>
                 </div>
             </div>
-            <div class="section hidden-no-embed">
+            <div class="section visible-embed" hidden>
                 <a
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     id="edit-link"
                 >
-                    <!-- https://github.com/umcconnell/cp"-->
                     Edit
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

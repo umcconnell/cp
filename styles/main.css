@@ -39,12 +39,11 @@ body.embedded #cm-editor .cm-activeLineGutter {
     background-color: transparent;
 }
 
-.hidden-no-embed {
-    display: none;
+body.embedded .visible-embed {
+    display: inline-block !important;
 }
-
-body.embedded .hidden-no-embed {
-    display: inline-block;
+body.embedded .hidden-embed {
+    display: none;
 }
 
 /* General styles */
