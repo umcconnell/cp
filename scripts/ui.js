@@ -28,7 +28,7 @@ lang_select.innerHTML = availableLangs
         (name) =>
             `<option ${
                 slugify(name) == url_lang ? "selected" : ""
-            }>${name}</option>`
+            }>${name}</option>`,
     )
     .join("");
 
@@ -40,7 +40,7 @@ await initEditor(
     tabsize_select.value,
     darkThemePreference.matches,
     document.body.classList.contains("embedded"),
-    !url_no_wrap
+    !url_no_wrap,
 );
 
 decodeHash()
@@ -56,5 +56,5 @@ window.addEventListener("hashchange", () =>
         .catch((e) => {
             console.error(e);
             showErrorDialog("Could not decode document");
-        })
+        }),
 );

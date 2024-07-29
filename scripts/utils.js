@@ -36,7 +36,7 @@ export function toggleLineWrap(
     editor,
     toggle_line_wrap,
     line_wrap_icon,
-    line_no_wrap_icon
+    line_no_wrap_icon,
 ) {
     console.debug(toggle_line_wrap);
     if (editor.wrap) {

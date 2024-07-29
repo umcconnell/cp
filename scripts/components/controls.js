@@ -30,24 +30,24 @@ const edit_link = document.getElementById("edit-link");
 const about_link = document.getElementById("about-link");
 
 export const darkThemePreference = window.matchMedia(
-    "(prefers-color-scheme: dark)"
+    "(prefers-color-scheme: dark)",
 );
 curr_theme_is_light = !darkThemePreference.matches;
 
 setTheme(
     darkThemePreference.matches,
     theme_darkmode_icon,
-    theme_lightmode_icon
+    theme_lightmode_icon,
 );
 
 // Event listeners
 lang_select.addEventListener(
     "change",
-    async () => await editor.changeLanguage(lang_select.value)
+    async () => await editor.changeLanguage(lang_select.value),
 );
 
 tabsize_select.addEventListener("change", () =>
-    editor.changeTabSize(tabsize_select.value)
+    editor.changeTabSize(tabsize_select.value),
 );
 
 theme_select.addEventListener("click", () => {

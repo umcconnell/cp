@@ -66,7 +66,7 @@ async function generateHashFromEditor() {
         hash = await generateHash(
             editor.rawText(),
             compression_select.value,
-            on_progress
+            on_progress,
         );
     } catch (e) {
         console.error(e);

@@ -1,6 +1,6 @@
 export const error_dialog = document.getElementById("error-dialog");
 export const error_dialog_content = document.getElementById(
-    "error-dialog-content"
+    "error-dialog-content",
 );
 export const about_dialog = document.getElementById("about-dialog");
 

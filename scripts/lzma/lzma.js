@@ -38,7 +38,7 @@ export default function LZMA(lzma_path) {
     /// Very simple error handling.
     lzma_worker.onerror = function (event) {
         var err = new Error(
-            event.message + " (" + event.filename + ":" + event.lineno + ")"
+            event.message + " (" + event.filename + ":" + event.lineno + ")",
         );
 
         for (var cbn in callback_obj) {
@@ -76,7 +76,7 @@ export default function LZMA(lzma_path) {
                     mixed,
                     mode,
                     on_finish,
-                    on_progress
+                    on_progress,
                 );
             },
             decompress: function decompress(byte_arr, on_finish, on_progress) {
@@ -85,7 +85,7 @@ export default function LZMA(lzma_path) {
                     byte_arr,
                     false,
                     on_finish,
-                    on_progress
+                    on_progress,
                 );
             },
             worker: function worker() {

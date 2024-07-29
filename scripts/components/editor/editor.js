@@ -34,7 +34,7 @@ export async function decodeHash(hash, on_progress) {
                     if (error) return reject(error);
                     resolve(plaintext);
                 },
-                on_progress
+                on_progress,
             );
         });
         reader.addEventListener("error", () => reject());
@@ -55,14 +55,14 @@ export async function generateHash(plaintext, compression = 1, on_progress) {
                 let reader = new FileReader();
                 reader.addEventListener("load", () => {
                     let base64 = reader.result.substr(
-                        reader.result.indexOf(",") + 1
+                        reader.result.indexOf(",") + 1,
                     );
                     resolve(base64);
                 });
                 reader.addEventListener("error", () => reject());
                 reader.readAsDataURL(new Blob([new Uint8Array(compressed)]));
             },
-            on_progress
+            on_progress,
         );
     });
 }

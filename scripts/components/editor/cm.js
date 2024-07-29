@@ -53,7 +53,7 @@ export class Editor {
             tabChar = " ",
             readOnly = false,
             wrap = true,
-        } = {}
+        } = {},
     ) {
         // https://discuss.codemirror.net/t/dynamic-light-mode-dark-mode-how/4709
         console.debug("Initializing editor to " + el);
@@ -62,18 +62,18 @@ export class Editor {
             extensions: [
                 basicSetup,
                 this.compartements.lineWrapping.of(
-                    wrap ? EditorView.lineWrapping : []
+                    wrap ? EditorView.lineWrapping : [],
                 ),
                 this.compartements.theme.of(
-                    darkTheme ? await getDarkTheme() : EditorView.theme({})
+                    darkTheme ? await getDarkTheme() : EditorView.theme({}),
                 ),
                 keymap.of([indentWithTab]),
                 this.compartements.language.of(await getLang(lang)),
                 this.compartements.tabSize.of(
-                    indentUnit.of(tabChar.repeat(tabSize))
+                    indentUnit.of(tabChar.repeat(tabSize)),
                 ),
                 this.compartements.readOnly.of(
-                    EditorState.readOnly.of(readOnly)
+                    EditorState.readOnly.of(readOnly),
                 ),
             ],
         });
@@ -90,7 +90,7 @@ export class Editor {
 
         this.view.dispatch({
             effects: this.compartements.language.reconfigure(
-                await getLang(name)
+                await getLang(name),
             ),
         });
     }
@@ -100,7 +100,7 @@ export class Editor {
 
         this.view.dispatch({
             effects: this.compartements.tabSize.reconfigure(
-                indentUnit.of(indentChar.repeat(tabSize))
+                indentUnit.of(indentChar.repeat(tabSize)),
             ),
         });
     }
@@ -110,7 +110,7 @@ export class Editor {
 
         this.view.dispatch({
             effects: this.compartements.theme.reconfigure(
-                darkTheme ? await getDarkTheme() : EditorView.theme({})
+                darkTheme ? await getDarkTheme() : EditorView.theme({}),
             ),
         });
     }
@@ -134,7 +134,7 @@ export class Editor {
 
         this.view.dispatch({
             effects: this.compartements.lineWrapping.reconfigure(
-                this.wrap ? EditorView.lineWrapping : []
+                this.wrap ? EditorView.lineWrapping : [],
             ),
         });
     }
@@ -142,7 +142,7 @@ export class Editor {
     makeReadOnly() {
         return this.view.dispatch({
             effects: this.compartements.readOnly.reconfigure(
-                EditorState.readOnly.of(true)
+                EditorState.readOnly.of(true),
             ),
         });
     }
