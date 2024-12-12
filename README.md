@@ -4,16 +4,16 @@ A no-datastore, client-side pastebin using LZMA compression.
 
 ## Table of Contents
 
--   [About](#about)
--   [Getting Started](#getting-started)
-    -   [Prerequisites](#prerequisites)
-    -   [Initial setup](#initial-setup)
--   [Contributing](#contributing)
--   [Versioning](#versioning)
--   [Authors](#authors)
--   [License](#license)
--   [See also](#see-also)
--   [Acknowledgments](#acknowledgments)
+- [About](#about)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Initial setup](#initial-setup)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
+- [See also](#see-also)
+- [Acknowledgments](#acknowledgments)
 
 ## About
 
@@ -93,10 +93,10 @@ Check out the great [paste](https://github.com/topaz/paste) and the fork
 
 ## Acknowledgments
 
--   [codemirror](https://codemirror.net/) - web editor component
-    ([MIT LICENSE](https://github.com/codemirror/dev/blob/main/LICENSE))
--   [esbuild](https://esbuild.github.io/) - ESM bundler
-    ([MIT LICENSE](https://github.com/evanw/esbuild/blob/main/LICENSE.md))
--   [LZMA-JS](https://github.com/LZMA-JS/LZMA-JS) JS port of the original 7-Zip
-    LZMA implementation
-    ([MIT LICENSE](https://github.com/LZMA-JS/LZMA-JS/blob/master/LICENSE))
+- [codemirror](https://codemirror.net/) - web editor component
+  ([MIT LICENSE](https://github.com/codemirror/dev/blob/main/LICENSE))
+- [esbuild](https://esbuild.github.io/) - ESM bundler
+  ([MIT LICENSE](https://github.com/evanw/esbuild/blob/main/LICENSE.md))
+- [LZMA-JS](https://github.com/LZMA-JS/LZMA-JS) JS port of the original 7-Zip
+  LZMA implementation
+  ([MIT LICENSE](https://github.com/LZMA-JS/LZMA-JS/blob/master/LICENSE))
