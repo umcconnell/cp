@@ -1,1 +1,0 @@
-import{a,b,c,d,e,f,g,h,i,j,k}from"./chunk-EZW3MDOX.js";import"./chunk-COFRHSL7.js";import"./chunk-DUUQVJGO.js";import"./chunk-VMP5MAC7.js";export{j as autoCloseTags,c as completionPath,k as esLint,i as javascript,e as javascriptLanguage,g as jsxLanguage,b as localCompletionSource,d as scopeCompletionSource,a as snippets,h as tsxLanguage,f as typescriptLanguage};
